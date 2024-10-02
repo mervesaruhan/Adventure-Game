@@ -23,10 +23,11 @@ public class BattleLoc extends Location{
                 System.out.println(this.getName() + "tüm düşmanları yendiniz !");
                 return true;
         }
-        if (this.getPlayer().getHealth() <= 0)
+        if (this.getPlayer().getHealth() <= 0){
+             System.out.println("Öldünüz!");
             return false;
-        System.out.println("Öldünüz!");
-
+        }
+            
         return true;
     }
 
